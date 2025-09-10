@@ -1,0 +1,6 @@
+# Django backend + DRF + JWT + CORS + TextBlob
+Django>=4.2
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+textblob
