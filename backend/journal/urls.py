@@ -1,7 +1,11 @@
-from django.urls import path
-from .views import JournalEntryList, JournalEntryDetail
+
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import JournalEntryViewSet
+
+router = DefaultRouter()
+router.register(r'entries', JournalEntryViewSet, basename='journalentry')
 
 urlpatterns = [
-    path('entries/', JournalEntryList.as_view(), name='journal-entry-list'),
-    path('entries/<int:pk>/', JournalEntryDetail.as_view(), name='journal-entry-detail'),
+    path('', include(router.urls)),
 ]

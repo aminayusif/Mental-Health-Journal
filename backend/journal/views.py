@@ -1,6 +1,10 @@
 from rest_framework import viewsets
 from .models import JournalEntry
 from .serializers import JournalEntrySerializer
+from rest_framework import generics
+
+
+# Removed unused JournalEntryList and JournalEntryDetail classes
 
 class JournalEntryViewSet(viewsets.ModelViewSet):
     queryset = JournalEntry.objects.all()

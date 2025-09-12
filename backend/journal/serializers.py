@@ -4,4 +4,14 @@ from .models import JournalEntry
 class JournalEntrySerializer(serializers.ModelSerializer):
     class Meta:
         model = JournalEntry
-        fields = ['id', 'title', 'content', 'created_at', 'updated_at']
+        fields = [
+            'id',
+            'user',
+            'text',
+            'mood',
+            'mood_score',
+            'tags',
+            'category',
+            'created_at',
+            'updated_at'
+        ]
