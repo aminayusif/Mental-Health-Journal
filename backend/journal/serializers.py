@@ -6,7 +6,6 @@ class JournalEntrySerializer(serializers.ModelSerializer):
         model = JournalEntry
         fields = [
             'id',
-            'user',
             'text',
             'mood',
             'mood_score',
