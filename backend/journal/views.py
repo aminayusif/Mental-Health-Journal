@@ -4,6 +4,9 @@ from .serializers import JournalEntrySerializer
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.decorators import api_view
+from .ml_integration.predictor import predict_sentiment
+from rest_framework.views import APIView
 
 
 # Removed unused JournalEntryList and JournalEntryDetail classes
@@ -36,3 +39,32 @@ class JournalEntryDetail(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return JournalEntry.objects.filter(user=self.request.user)
+    
+@api_view(['POST'])
+def analyze_sentiment(request):
+    text = request.data.get('text', '')
+    if not text:
+        return Response(
+            {"error": "No text provided"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    sentiment = predict_sentiment(text)
+    return Response(
+        {"sentiment": sentiment},
+        status=status.HTTP_200_OK
+    )
+
+class PredictSentimentAPI(APIView):
+    def post(self, request):
+        text = request.data.get("text", "")
+
+        prediction = predict_sentiment(text)
+
+        if prediction == "MODEL_NOT_READY":
+            return Response({
+                "status": "error",
+                "message": "ML model not trained yet. Please train the model first."
+            }, status=200)
+
+        return Response({"prediction": prediction})
