@@ -1,0 +1,11 @@
+text,mood,mood_score,tags,category,created_at
+Today I practiced mindfulness and felt calmer.,happy,8,"[""mindfulness"", ""calm""]",Self-care,2025-09-22 19:46:41.691538
+I felt low today. Missed some important calls and felt unproductive.,sad,3,"[""work"", ""motivation""]",Work,2025-09-22 21:56:26.714902
+"I was worried about the upcoming presentation, couldn’t sleep well.",anxious,4,"[""presentation"", ""stress""]",Career,2025-09-22 21:56:56.809605
+Today was a great day! I went jogging and felt really energized.,happy,9,"[""exercise"", ""wellness"", ""outdoors""]",Health,2025-09-22 22:00:23.950201
+"A normal day, went through routine tasks without anything special happening.",neutral,6,"[""routine"", ""daily""]",Personal,2025-09-22 22:01:43.580868
+Struggled with focus while working on my project.,anxious,5,"[""work"", ""stress""]",Work,2025-09-25 16:20:31.888897
+I’ve been struggling with balancing work and personal life. I need to find a better routine.,anxious,6,"[""balance"", ""work-life"", ""struggle""]",Personal,2025-10-15 13:42:56.250387
+Had a productive day working on my personal project. Felt good about the progress.,happy,8,"[""productivity"", ""project"", ""focus""]",Work,2025-10-15 13:47:28.573221
+Feeling overwhelmed with all the tasks to do. Couldn’t get much done today.,anxious,4,"[""stress"", ""overwhelmed""]",Personal,2025-10-15 13:49:41.217262
+Spent the day with family. Had a nice time just relaxing and chatting.,neutral,6,"[""family"", ""relaxing"", ""quality time""]",Social,2025-10-15 13:50:13.797461
