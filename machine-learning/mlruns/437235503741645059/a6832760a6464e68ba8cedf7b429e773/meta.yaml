@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/project Github/web dev + machine learning/mental-health-journal/machine-learning/mlruns/437235503741645059/a6832760a6464e68ba8cedf7b429e773/artifacts
+end_time: 1765895782487
+entry_point_name: ''
+experiment_id: '437235503741645059'
+lifecycle_stage: active
+run_id: a6832760a6464e68ba8cedf7b429e773
+run_name: carefree-mink-679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765895770000
+status: 3
+tags: []
+user_id: USER
