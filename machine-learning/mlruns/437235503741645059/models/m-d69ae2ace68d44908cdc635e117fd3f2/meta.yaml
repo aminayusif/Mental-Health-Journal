@@ -1,0 +1,10 @@
+artifact_location: file:///D:/project Github/web dev + machine learning/mental-health-journal/machine-learning/mlruns/437235503741645059/models/m-d69ae2ace68d44908cdc635e117fd3f2/artifacts
+creation_timestamp: 1765895770120
+experiment_id: '437235503741645059'
+last_updated_timestamp: 1765895782460
+model_id: m-d69ae2ace68d44908cdc635e117fd3f2
+model_type: null
+name: mental_health_model
+source_run_id: a6832760a6464e68ba8cedf7b429e773
+status: 2
+status_message: null
